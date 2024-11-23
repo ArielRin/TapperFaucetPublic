@@ -7,6 +7,8 @@ This is a token faucet application that allows users to receive tokens by submit
 
 ---
 
+test live https://brilliant-hotteok-86d3b3.netlify.app/
+
 ## **Features**
 
 - **Batch Processing**:
