@@ -85,7 +85,7 @@ setInterval(async () => {
       console.error("Error processing token batch:", error);
     }
   }
-}, 60000); // Process token batches every 60 seconds
+}, 20000); // Process token batches every 20 seconds
 
 // Endpoint to queue token drips
 app.post("/drip-token", (req, res) => {
