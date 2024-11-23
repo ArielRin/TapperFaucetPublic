@@ -9,10 +9,12 @@ app.use(express.json());
 // Add CORS Middleware
 app.use(
   cors({
-    origin: "http://localhost:5173", // Allow only your frontend's origin
+    origin: "https://brilliant-hotteok-86d3b3.netlify.app/", "http://localhost:5173", // Allow only your frontend's origin
     methods: ["GET", "POST"], // Allow specific HTTP methods
   })
 );
+
+
 
 const PORT = process.env.PORT || 3010;
 
