@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 
-const FAUCET_API_URL = "http://localhost:3010/drip-token"; // Update this if your backend URL changes.
+const FAUCET_API_URL = "http://172.236.32.250:3010/drip-token"; // Update this if your backend URL changes.
 
 const App = () => {
   const [walletAddress, setWalletAddress] = useState("");
