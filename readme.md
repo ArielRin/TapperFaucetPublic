@@ -110,18 +110,29 @@ cd token-faucet
 3. **Create a `.env` file**:
    Add the following environment variables:
    ```env
-   FAUCET_PRIVATE_KEY=your_private_key
-   FAUCET_PROVIDER_URL=https://your_rpc_url
-   TOKEN_CONTRACT_ADDRESS=your_token_contract_address
+   FAUCET_PRIVATE_KEY=ADDYOURWALLETKEYHERE
+   FAUCET_PROVIDER_URL=https://testnet.bit-rock.io
+   MULTICALL_CONTRACT_ADDRESS=0x41041da92A6106804ffF87017573004d8Ad197A9
+   TOKEN_CONTRACT_ADDRESS=0xB1fC2A12C373D9DbECED5d6884c63c14C549B69f
+   FAUCET_AMOUNT=1
    PORT=3010
    ```
 
-4. **Start the backend**:
+4. **Deploy the Multicall Contract**:
+   Assist with batching you will need to deploy the multicall contract in the contracts folder on the repo.
+
+5. **Fund the Faucet Wallet with Tokens**:
+   Send tokens to the wallet address used to host the faucet (Address used for setting the Private Key).
+
+
+6. **Start the backend**:
    ```bash
    node index.js
    ```
 
    The backend will run on `http://localhost:3010`.
+
+
 
 ---
 
@@ -144,6 +155,8 @@ cd token-faucet
 
 4. **Access the frontend**:
    - Open your browser and navigate to `http://localhost:5173`.
+
+
 
 ---
 
