@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from "react";
 
-const FAUCET_API_URL = "http://localhost:3010/drip-token"; // Update this if your backend URL changes.
+const FAUCET_API_URL = "http://172.236.32.250:3010/drip-token"; // Update this if your backend URL changes.
 
 const App = () => {
   const [walletAddress, setWalletAddress] = useState("");
@@ -92,6 +92,8 @@ const App = () => {
         </button>
       </div>
       <div style={{ marginTop: "20px" }}>
+        <p>token addy on brock testnet</p>
+        <p>0xB1fC2A12C373D9DbECED5d6884c63c14C549B69f</p>
         <p>Total Clicks: {clickCount}</p>
         <p>Current CPS (2s window): {cps.toFixed(2)}</p>
         <p>Highest CPS: {highestCps.toFixed(2)}</p>
